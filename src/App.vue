@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="example-content">
+      <environment-variables></Environment-variables>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EnvironmentVariables from './components/EnvironmentVariables'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    EnvironmentVariables
   }
 }
 </script>
@@ -24,5 +25,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.example-content {
+  border: 1px solid rgba(100,100,100,.3);
+  padding: 10px;
+  margin: 20px;
 }
 </style>
