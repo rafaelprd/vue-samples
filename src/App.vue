@@ -3,16 +3,21 @@
     <div class="example-content">
       <environment-variables></Environment-variables>
     </div>
+    <div class="example-content">
+      <importing-mock-data></importing-mock-data>
+    </div>
   </div>
 </template>
 
 <script>
 import EnvironmentVariables from './components/EnvironmentVariables'
+import ImportingMockData from './components/ImportingMockData'
 
 export default {
   name: 'app',
   components: {
-    EnvironmentVariables
+    EnvironmentVariables,
+    ImportingMockData
   }
 }
 </script>
